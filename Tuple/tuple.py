@@ -15,7 +15,7 @@ print(nested_tuple) # ((12, 43, 23, 54, 67, 12, 54), (10, 34, 21, 5))
 # tuples are immutable that means tuples value are not changeable
 """
     second_way_tuples[2] = 100
-    -> thats are wrong because tuple values are not changeable
+    -> that's wrong because tuple values are not changeable
 """
 
 # tuples can contain mutable objects and that values are changeable
