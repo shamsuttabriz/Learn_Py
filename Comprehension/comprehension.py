@@ -24,8 +24,9 @@ for name in names:
     for age in ages:
         print(name, age)
 
-    """Output:
-       -------
+    """
+        Output:
+        -------
         Shakib 34
         Shakib 38
         Shakib 35
