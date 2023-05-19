@@ -37,4 +37,6 @@ def talkBack(response):
 
 while True:
     command = listen()
+    if command == 'final' :
+        break
     decide(command)
