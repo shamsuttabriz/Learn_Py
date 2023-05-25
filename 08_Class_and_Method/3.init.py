@@ -11,14 +11,14 @@ class Phone:
         return sms
     
 my_phone = Phone('Oppo', 13000, 'Blue')
-print(my_phone.brand, my_phone.price, my_phone.price)
-print(my_phone.manufacture)
+print(my_phone.brand, my_phone.price, my_phone.price) # Oppo 13000 Blue
+print(my_phone.manufacture) # china
 
 her_phone = Phone('iPhone', 85000, 'Purple')
-print(her_phone.brand, her_phone.price, her_phone.price)
+print(her_phone.brand, her_phone.price, her_phone.color) # iPhone 85000 Purple
 
 dad_phone = Phone('Nokia', 7000, 'Black')
-print(dad_phone.brand, dad_phone.price, dad_phone.color)
+print(dad_phone.brand, dad_phone.price, dad_phone.color) # Nokia 7000 Black
 
 
-print(my_phone.price, her_phone.price, dad_phone.price)
+print(my_phone.price, her_phone.price, dad_phone.price) # 13000 85000 7000
