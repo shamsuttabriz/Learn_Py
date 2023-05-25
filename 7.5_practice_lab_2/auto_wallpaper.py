@@ -25,4 +25,4 @@ with open('wallpaper.png', 'wb') as image:
     image.write(res.content)
 
 # set as wallpaper
-PyWallpaper.change_wallpaper('D:\PH_Python\#anis_vai\Learn_Py\8_practice_lab_2\wallpaper.png')
+PyWallpaper.change_wallpaper('D:\PH_Python\#anis_vai\Learn_Py\7.5_practice_lab_2\wallpaper.png')
