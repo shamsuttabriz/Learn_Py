@@ -1,19 +1,27 @@
 class Calculator:
-    def add(self, a, b):
-        return a + b
-    def subtract(self, a, b):
-        return a - b
-    def divided(self, a, b):
-        div = a / b
-        x = "{:.3f}".format(div)
-        return x
-    def multiply(self, a, b):
-        return a * b
-    
-cal = Calculator()
+
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def add(self):
+        return self.a + self.b
+    def subtract(self):
+        return self.a - self.b
+    def divided(self):
+        try:
+            div = self.a / self.b
+            x = "{:.3f}".format(div)
+            return x
+        except ZeroDivisionError:
+            return 'It is impossible to divided by zero'
+    def multiply(self):
+        return self.a * self.b
 
 a = float(input("Enter the first number: "))
 b = float(input("Enter the second number: "))
+
+cal = Calculator(a, b)
 
 choice = 1
 
@@ -26,13 +34,13 @@ while choice != 0:
     choice = int(input("Enter the select option: "))
 
     if choice == 1:
-        print(cal.add(a, b))
+        print(cal.add())
     elif choice == 2:
-        print(cal.subtract(a, b))
+        print(cal.subtract())
     elif choice == 3:
-        print(cal.divided(a, b))
+        print(cal.divided())
     elif choice == 4:
-        print(cal.multiply(a, b))
+        print(cal.multiply())
     elif choice == 0:
         print("Program is End!")
     else:
