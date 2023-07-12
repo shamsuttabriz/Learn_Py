@@ -12,7 +12,11 @@ class Laptop:
 
 my_laptop = Laptop('Dell', 4)
 my_laptop.increase()
+my_laptop.increase()
 print("Before repair age:", my_laptop.age) # Before repair age: 5
 my_laptop.repair()
 print("After repair age:", my_laptop.age) # After repair age: 3
+
+print(my_laptop.__dict__) # {'brand': 'Dell', 'age': 4}
+
 
